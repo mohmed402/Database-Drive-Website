@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "League Spartan", sans-serif;
+}
+
+main {
+  display: flex;
+}
+
+.sideMenu {
+  background-color: rgb(54 183 255);
+  width: 300px;
+  height: 100vh;
+  color: aliceblue;
+}
+
+.logo {
+  height: 200px;
+  display: block;
+  margin: auto;
+}
+
+.sideMenu ul {
+  list-style: none;
+  display: inline-grid;
+  align-items: baseline;
+  justify-items: center;
+  margin: 20px auto;
+  width: 300px;
+  padding: 0;
+  gap: 23px;
+  font-size: 22px;
+}
+
+.sideMenu a {
+  cursor: pointer;
+  list-style: none;
+  width: 300px;
+  text-align: center;
+  padding: 20px 0px;
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+.logout-icon {
+  position: relative;
+  left: 22px;
+}
+
+nav a:hover {
+  background-color: rgb(127, 204, 255);
+  color: black;
+}
+
+.user-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 264px;
+  background: rgb(0, 0, 0);
+  display: flex;
+  padding: 0 18px;
+  align-items: center;
+}
+
+.logout {
+  width: 35px;
+  margin-left: 22px;
+  cursor: pointer;
+}
+
+.logout:hover {
+  scale: 1.2;
+}
+
+.selected {
+  color: black !important;
+}
+
+/* content */
+
+.content {
+  width: 90%;
+  background-color: aliceblue;
+}
+
+.welcome-text {
+  margin: 125px;
+  font-size: 40px;
+}
+
+.dash-info {
+  width: 77%;
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 10px auto;
+}
+
+.dash-info fieldset {
+  width: 300px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+/* main-container */
+
+.main-container {
+  display: flex;
+  text-align: center;
+}
+
+.order-status li {
+  list-style: none;
+  font-size: 23px;
+  margin: 22px;
+}
+
+.news {
+  width: 550px !important;
+  padding: 0;
+  border: 0;
+}
+
+.news ul {
+  padding: 0;
+  margin: 0;
+  border-radius: 20px;
+  border: 0;
+}
+
+.news li {
+  list-style: none;
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.news section {
+  display: flex;
+  align-items: center;
+}
+
+.live {
+  text-align: left;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.live-blue {
+  height: 30px;
+  width: 30px;
+  background-color: rgb(58, 133, 204);
+  border-radius: 50%;
+  animation: customAni 2s ease 0s infinite normal none;
+}
+
+/* Copy this code after the above code */
+@keyframes customAni {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}

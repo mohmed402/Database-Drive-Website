@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #c0dfe8;
+  font-family: "League Spartan", sans-serif;
+}
+
+.product-list {
+  margin: 200px auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product {
+  width: 300px;
+  text-align: center;
+  margin: 30px;
+}
+
+.product img {
+  position: relative;
+  top: 4px;
+  width: 300px;
+  height: 300px;
+}
+
+.product-details {
+  background: #f7f7f7;
+  padding: 15px;
+}
+
+.product h1 {
+  margin: 0;
+  font-size: 24px;
+}
+.product-line {
+  height: 10px;
+  background: #63adff;
+  border: 0;
+  margin: 0;
+}
+
+.product-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.colourSetter {
+  border: 1px solid;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  margin-right: 17px;
+}
+
+.color {
+  width: 93px;
+  position: relative;
+  right: 40px;
+}
+
+.price {
+  font-size: 20px;
+  width: 65px;
+}
+
+.addToCartBtn {
+  background: #63adff;
+  border-radius: 20px;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 9px 25px;
+  border: 0;
+  cursor: pointer;
+}
+
+.product:hover .product-details {
+  color: aliceblue;
+  background-color: #63adff;
+}
+
+.product:hover .addToCartBtn {
+  background-color: #ffffff !important;
+  color: #63adff;
+}

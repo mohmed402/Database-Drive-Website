@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="../styles/homeStyle.css" />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="../media/rideitWhite.png" alt="" />
+
+      <nav class="nav-bar">
+        <ul>
+          <a href="./index.html"><li>Home</li></a>
+          <a href="./store.php"><li>Store</li></a>
+          <a href="./contactus.html"> <li>Contact</li></a>
+          <a href="./admin/dashbord.php"><li>Account</li></a>
+        </ul>
+      </nav>
+      <img width="100%" src="../media/backgroundHome.jpg" alt="" />
+    </header>
+
+    <main>
+      <section class="introSec">
+        <img class="mainImgOne" src="../media/background3.jpeg" alt="" />
+        <p class="mainTextOne">
+          Experience the ultimate in urban mobility with our Electric
+          Self-Balancing Scooter, a marvel of modern engineering designed for
+          the eco-conscious explorer. Glide through the city with ease and
+          elegance, leaving behind the constraints of traffic and the carbon
+          footprint of traditional transportation. Our scooter not only offers a
+          seamless blend of speed and stability but also embodies a lifestyle of
+          innovation and sustainability. With its sleek, eco-friendly design,
+          intuitive control, and dynamic performance, it transforms your daily
+          commute into a joyous journey of discovery. Embrace the future of
+          travel with our Electric Self-Balancing Scooter—where every ride is an
+          opportunity to redefine the way you move, merging efficiency with a
+          touch of fun, and leading the charge towards a greener, smarter way of
+          living."
+        </p>
+      </section>
+
+      <section>
+        <img class="sigImg" src="../media/sigDiscription.png" alt="" />
+      </section>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="../media/slideshow1.jpeg" style="width: 100%" />
+          <div class="slide-text">
+            Move In The Direction Of Faith And Courage
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="../media/slideshow2.jpeg" style="width: 100%" />
+          <div class="slide-text">Be smart, ride with intelligence</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="../media/slideshow3.webp" style="width: 100%" />
+          <div style="color: black" class="slide-text">
+            Find the right Hoverboard for you
+          </div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <!-- The dots/circles -->
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+      <section class="buyNowImg">
+        <!-- <img class="buyNowImg" src="../../media/backgroundBuy.jpg" alt="" /> -->
+        <a class="link" href="product.html">
+          <section class="buyNowElement">
+            <img src="../media/cart.png" alt="cart icon" />
+            <p class="link">shop now</p>
+          </section>
+        </a>
+
+        <a class="link" href="product.html">
+          <section class="buyNowElement">
+            <img height="86px" src="../media/email.png" alt="Contact us icon" />
+            <p class="link">Contact us</p>
+          </section>
+        </a>
+
+        <a class="link" href="./account/login.php">
+          <section class="buyNowElement">
+            <img height="86px" src="../media/user.png" alt="account icon" />
+            <p class="link">Account</p>
+          </section>
+        </a>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <section class="footer-about">
+        <h3>ride it</h3>
+        <p>Short description about the company or website.</p>
+      </section>
+
+      <nav class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <section class="footer-contact">
+        <h3>Contact Us</h3>
+        <address>
+          <p>(123) 456-7890</p>
+          <a href="mailto:info@rideit.com">info@rideit.com</a>
+        </address>
+      </section>
+    </footer>
+
+    <script src="../script/script.js"></script>
+  </body>
+</html>
