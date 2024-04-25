@@ -67,10 +67,10 @@ foreach ($products as $product) {
       <nav class="footer-links">
         <h3>Quick Links</h3>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./admin/dashbord.php">Account</a></li>
+          <li><a href="./store.php">Store</a></li>
+          <li><a href="./contactus.html">Contact</a></li>
         </ul>
       </nav>
 
