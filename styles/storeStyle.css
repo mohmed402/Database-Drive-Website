@@ -8,11 +8,13 @@ body {
 }
 
 .product-list {
-  margin: 200px auto;
+  margin: 125px auto;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
+  z-index: -1;
+  position: sticky;
 }
 
 .product {

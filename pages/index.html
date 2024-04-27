@@ -9,16 +9,21 @@
   <body>
     <header>
       <a href="#main" class="skip">Skip to main content</a>
-      <img class="logo" src="../media/rideitWhite.png" alt="" />
+      <img
+        onclick="menuHandler()"
+        class="menu-icon"
+        src="../media/menu.png"
+        alt="menu icon"
+      />
+
+      <img class="logo" src="../media/rideitWhite.png" alt="ride-it logo" />
       <div id="myLinks">
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
+        <a href="./index.html">Home</a>
+        <a href="./store.php">Store</a>
+        <a href="./contactus.html">Contact</a>
+        <a href="./admin/dashbord.php">Account</a>
       </div>
-      <a href="#" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-      <img class="menu-icon" src="../media/menu.png" alt="menu icon" />
+
       <nav class="nav-bar">
         <ul>
           <li><a href="./index.html">Home</a></li>
@@ -27,13 +32,21 @@
           <li><a href="./admin/dashbord.php">Account</a></li>
         </ul>
       </nav>
-      <img class="full-width-image" src="../media/backgroundHome.jpg" alt="" />
+      <img
+        class="full-width-image"
+        src="../media/backgroundHome.jpg"
+        alt="showing Self-Balancing Scooter"
+      />
     </header>
 
     <main id="main">
-      <section class="introSec">
-        <img class="mainImgOne" src="../media/background3.jpeg" alt="" />
-        <p class="mainTextOne">
+      <figure class="introSec">
+        <img
+          class="mainImgOne"
+          src="../media/background3.jpeg"
+          alt="playing with Self-Balancing Scooter"
+        />
+        <figcaption class="mainTextOne">
           Experience the ultimate in urban mobility with our Electric
           Self-Balancing Scooter, a marvel of modern engineering designed for
           the eco-conscious explorer. Glide through the city with ease and
@@ -47,8 +60,8 @@
           opportunity to redefine the way you move, merging efficiency with a
           touch of fun, and leading the charge towards a greener, smarter way of
           living."
-        </p>
-      </section>
+        </figcaption>
+      </figure>
 
       <section>
         <img
@@ -125,6 +138,7 @@
         </a>
       </section>
     </main>
+
     <footer class="site-footer">
       <section class="footer-about">
         <h3>ride it</h3>
@@ -151,5 +165,15 @@
     </footer>
 
     <script src="../script/script.js"></script>
+    <script>
+      function menuHandler() {
+        let navBar = document.getElementById("myLinks");
+        if (navBar.style.display === "flex") {
+          navBar.style.display = "none";
+        } else {
+          navBar.style.display = "flex";
+        }
+      }
+    </script>
   </body>
 </html>

@@ -68,14 +68,22 @@ header nav {
   border-radius: 10px;
 }
 
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-  position: relative;
+#myLinks {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: aliceblue;
+  gap: 15px;
+  position: absolute;
 }
 
-.topnav #myLinks {
-  display: none;
+#myLinks a {
+  text-decoration: none;
+  padding: 15px 0;
+  width: 100%;
+  text-align: center;
+  color: #000000;
 }
 
 .topnav a {
@@ -117,17 +125,19 @@ header nav {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .mainImgOne {
   width: 40%;
   margin: 50px;
+  min-width: 322px;
 }
 
 .mainTextOne {
   width: 44%;
   margin: 1%;
+  min-width: 325px;
 }
 
 .sigImg {
