@@ -178,6 +178,9 @@ header nav {
   text-decoration: none;
   margin-top: 17px;
 }
+.full-width-image {
+  width: 100%;
+}
 
 .buyNowElement {
   margin: auto;

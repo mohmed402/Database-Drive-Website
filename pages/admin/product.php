@@ -64,7 +64,7 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
             const toggleViewButton = document.getElementById('toggle-view');
             const productContainer = document.getElementById('product-container');
 
-            // Initial view (table view)
+
             renderTableView();
 
             toggleViewButton.addEventListener('click', function () {
