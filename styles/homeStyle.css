@@ -19,8 +19,6 @@ body {
 
 .nav-bar li {
   display: inline-block;
-  padding: 20px;
-  cursor: pointer;
   color: black;
 }
 
@@ -38,6 +36,9 @@ body {
 .nav-bar li a {
   text-decoration: none;
   color: black;
+  padding: 20px;
+  height: 10px;
+  display: inline-block;
 }
 
 .logo {
@@ -52,9 +53,71 @@ header nav {
   margin: 25px;
 }
 
+.menu-icon {
+  height: 38px;
+  float: right;
+  margin: 48px 40px;
+  display: none;
+}
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .introSec {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .mainImgOne {
@@ -63,12 +126,12 @@ header nav {
 }
 
 .mainTextOne {
-  width: 60%;
-  margin: 50px;
+  width: 44%;
+  margin: 1%;
 }
 
 .sigImg {
-  width: 600px;
+  width: 55%;
   margin: auto;
   display: block;
   margin: 100px auto;
@@ -274,5 +337,14 @@ header nav {
 
   .site-footer li {
     margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 1070px) {
+  .nav-bar {
+    display: none;
+  }
+  .menu-icon {
+    display: inline-block;
   }
 }
