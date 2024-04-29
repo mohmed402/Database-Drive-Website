@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="../styles/homeStyle.css" />
+    <link rel="stylesheet" href="./styles/homeStyle.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
     <header>
@@ -12,29 +13,29 @@
       <img
         onclick="menuHandler()"
         class="menu-icon"
-        src="../media/menu.png"
+        src="./media/menu.png"
         alt="menu icon"
       />
 
-      <img class="logo" src="../media/rideitWhite.png" alt="ride-it logo" />
+      <img class="logo" src="./media/rideitWhite.png" alt="ride-it logo" />
       <div id="myLinks">
         <a href="./index.html">Home</a>
-        <a href="./store.php">Store</a>
-        <a href="./contactus.html">Contact</a>
-        <a href="./admin/dashbord.php">Account</a>
+        <a href="./pages/store.php">Store</a>
+        <a href="./pages/contactus.html">Contact</a>
+        <a href="./pages/dashbord.php">Account</a>
       </div>
 
       <nav class="nav-bar">
         <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./store.php">Store</a></li>
-          <li><a href="./contactus.html">Contact</a></li>
-          <li><a href="./admin/dashbord.php">Account</a></li>
+          <a href="./index.html">Home</a>
+          <a href="./pages/store.php">Store</a>
+          <a href="./pages/contactus.html">Contact</a>
+          <a href="./pages/dashbord.php">Account</a>
         </ul>
       </nav>
       <img
         class="full-width-image"
-        src="../media/backgroundHome.jpg"
+        src="./media/backgroundHome.jpg"
         alt="showing Self-Balancing Scooter"
       />
     </header>
@@ -43,7 +44,7 @@
       <figure class="introSec">
         <img
           class="mainImgOne"
-          src="../media/background3.jpeg"
+          src="./media/background3.jpeg"
           alt="playing with Self-Balancing Scooter"
         />
         <figcaption class="mainTextOne">
@@ -66,14 +67,14 @@
       <section>
         <img
           class="sigImg"
-          src="../media/sigDiscription.png"
+          src="./media/sigDiscription.png"
           alt="Self-Balancing Scooter"
         />
       </section>
       <div class="slideshow-container">
         <div class="mySlides fade">
           <img
-            src="../media/slideshow1.jpeg"
+            src="./media/slideshow1.jpeg"
             class="full-width-image"
             alt="Faith And Courage"
           />
@@ -84,7 +85,7 @@
 
         <div class="mySlides fade">
           <img
-            src="../media/slideshow2.jpeg"
+            src="./media/slideshow2.jpeg"
             class="full-width-image"
             alt="smart ride"
           />
@@ -93,10 +94,11 @@
 
         <div class="mySlides fade">
           <img
-            src="../media/slideshow3.webp"
+            src="./media/slideshow3.webp"
             class="full-width-image"
-            alt="Hoverboard"
+            alt="Man riding a Hoverboard"
           />
+
           <div style="color: black" class="slide-text">
             Find the right Hoverboard for you
           </div>
@@ -116,23 +118,23 @@
       </div>
 
       <section class="buyNowImg">
-        <a class="link" href="./store.php">
+        <a class="link" href="./pages/store.php">
           <figure class="buyNowElement">
-            <img src="../media/cart.png" alt="shop icon" />
+            <img src="./media/cart.png" alt="shop icon" />
             <figcaption class="link">shop now</figcaption>
           </figure>
         </a>
 
-        <a class="link" href="./contactus.html">
+        <a class="link" href="./pages/contactus.html">
           <figure class="buyNowElement">
-            <img height="86" src="../media/email.png" alt="Contact us icon" />
-            <figcaption>Contact us</figcaption>
+            <img height="86" src="./media/email.png" alt="Contact us icon" />
+            <figcaption class="link">Contact us</figcaption>
           </figure>
         </a>
 
-        <a class="link" href="./admin/dashbord.php">
+        <a class="link" href="./pages/admin/dashbord.php">
           <figure class="buyNowElement">
-            <img height="86" src="../media/user.png" alt="account icon" />
+            <img height="86" src="./media/user.png" alt="account icon" />
             <figcaption class="link">Account</figcaption>
           </figure>
         </a>
@@ -142,16 +144,19 @@
     <footer class="site-footer">
       <section class="footer-about">
         <h3>ride it</h3>
-        <p>Short description about the company or website.</p>
+        <p>
+          Experience the ultimate in urban mobility with our Electric
+          Self-Balancing Scooter.
+        </p>
       </section>
 
       <nav class="footer-links">
         <h3>Quick Links</h3>
         <ul>
           <li><a href="./index.html">Home</a></li>
-          <li><a href="./admin/dashbord.php">Account</a></li>
-          <li><a href="./store.php">Store</a></li>
-          <li><a href="./contactus.html">Contact</a></li>
+          <li><a href="./pages/admin/dashbord.php">Account</a></li>
+          <li><a href="./pages/store.php">Store</a></li>
+          <li><a href="./pages/contactus.html">Contact</a></li>
         </ul>
       </nav>
 
@@ -164,7 +169,7 @@
       </section>
     </footer>
 
-    <script src="../script/script.js"></script>
+    <script src="./script/script.js"></script>
     <script>
       function menuHandler() {
         let navBar = document.getElementById("myLinks");

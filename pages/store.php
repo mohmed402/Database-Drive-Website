@@ -75,13 +75,14 @@ foreach ($products as $product) {
     <footer class="site-footer">
       <section class="footer-about">
         <h3>ride it</h3>
-        <p>Short description about the company or website.</p>
+        <p>Experience the ultimate in urban mobility with our Electric
+          Self-Balancing Scooter.</p>
       </section>
 
       <nav class="footer-links">
         <h3>Quick Links</h3>
         <ul>
-          <li><a href="./index.html">Home</a></li>
+          <li><a href="../index.html">Home</a></li>
           <li><a href="./admin/dashbord.php">Account</a></li>
           <li><a href="./store.php">Store</a></li>
           <li><a href="./contactus.html">Contact</a></li>

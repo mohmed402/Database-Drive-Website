@@ -7,7 +7,7 @@ require '../../actions/log.php';
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Dashbord</title>
     <link rel="stylesheet" href="../../styles/admin/dashbord.css" />
   </head>
   <body>
@@ -26,7 +26,7 @@ require '../../actions/log.php';
         <section class="user-info">
           <img width="50px" src="../../media/userBlueBack.png" alt="profile icon" />
           <div style="margin-left: 23px">
-            <p><?php echo $_SESSION['name'] ?></p>
+            <p><?php echo ucwords($_SESSION['name']) ?></p>
             <p><?php echo ($_SESSION['account_type'] == 1) ? "Admin" : "User"; ?></p>
 
           </div>
@@ -38,7 +38,7 @@ require '../../actions/log.php';
       </section>
       <section class="content">
         <header>
-          <h1 class="welcome-text">Wellcome Back Muhammad</h1>
+          <h1 class="welcome-text">Wellcome Back <?php echo ucwords($_SESSION['name']) ?></h1>
           <section class="dash-info">
             <fieldset>
               <h2>Total Sold</h2>

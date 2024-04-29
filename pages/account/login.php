@@ -87,7 +87,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             Don't have an account?
             <a rel="noopener noreferrer" href="./signup.html" class="">Sign up</a>
           </p>
-          <p style="margin-top: 0;" class="signup">  Return to  <a class="return" href="../index.html"> home page </a>.</p> 
+          <p style="margin-top: 0;" class="signup">  Return to  <a class="return" href="../../index.html"> home page </a>.</p> 
 
     </div>
 </body>
