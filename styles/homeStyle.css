@@ -38,7 +38,7 @@ body {
   text-decoration: none;
   color: black;
   padding: 20px;
-  height: 10px;
+  height: 14px;
   display: inline-block;
 }
 
@@ -59,6 +59,7 @@ header nav {
   float: right;
   margin: 48px 40px;
   display: none;
+  cursor: pointer;
 }
 .mobile-container {
   max-width: 480px;

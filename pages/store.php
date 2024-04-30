@@ -27,7 +27,7 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
       <img class="logo" src="../media/rideitWhite.png" alt="ride-it logo" />
       <div id="myLinks">
-        <a href="./index.html">Home</a>
+        <a href="../index.html">Home</a>
         <a href="./store.php">Store</a>
         <a href="./contactus.html">Contact</a>
         <a href="./admin/dashbord.php">Account</a>
@@ -35,7 +35,7 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
       <nav class="nav-bar">
       <ul style="background-color: #c0dfe8;">
-          <li><a href="./index.html">Home</a></li>
+          <li><a href="../index.html">Home</a></li>
           <li><a href="./store.php">Store</a></li>
           <li><a href="./contactus.html">Contact</a></li>
           <li><a href="./admin/dashbord.php">Account</a></li>
